@@ -1,28 +1,62 @@
-MoRE: MultiModal Contrastive Pretraining of Xray, ECG, and Report
+
+# MoRE: MultiModal Contrastive Pretraining of X-ray, ECG, and Report
 
 ![MoRE Framework](./diagramMultimodal_final.png)
 
-Setting up environment:
-1.Create a virtual ENV
-2.pip install requirements.txt
+## Setting up the Environment
 
-Pre-Train MoRE:
-1. Download Required Datasets from Physionet (we do not attach due to required credential for data signing)
-2. Add data in appropriate folder.
-3. Preprocess data (preprocess code included)
-4. Run python pretrain_multimodel.py (add args as needed, default in place)
+1. **Create a virtual environment**:
+   ```bash
+   python -m venv myenv
+   ```
 
-Fine-tune in Mimic/Chexpert:
-1. Ensure model is saved.
-2. Run multimodal_infer.py (change data paths, and model paths)
+2. **Install the required dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Zero-Shot classification:
-1. Run zero_shot_xray/ecg_more.py to do zero-shot classification on Mimic/Chexpert
-2. Change data as necessary/update path
+## Pre-Train MoRE
 
-Retrieval Tasks:
-1. Look at xray_ecg_retrieval notebook for example of multimodal retrieval
-2. Run xray_retrieval for text/image retrieval of X-ray
+1. **Download the required datasets** from Physionet (datasets are not attached due to credential requirements for data signing).
+   
+2. **Add the datasets** to the appropriate folder.
 
-t-SNE plot:
-1. Look at tnse_plot notebook for example of tnse plot of features
+3. **Preprocess the data** (preprocessing code is included).
+
+4. **Run the pretraining script**:
+   ```bash
+   python pretrain_multimodel.py
+   ```
+   Add arguments as needed; default settings are provided.
+
+## Fine-tune in Mimic/Chexpert
+
+1. **Ensure that the pre-trained model is saved**.
+
+2. **Run the fine-tuning script**:
+   ```bash
+   python multimodal_infer.py
+   ```
+   Make sure to change the data paths and model paths as needed.
+
+## Zero-Shot Classification
+
+1. **Run the zero-shot classification script**:
+   ```bash
+   python zero_shot_xray/ecg_more.py
+   ```
+   Update data paths or parameters as necessary.
+
+## Retrieval Tasks
+
+1. **Check the `xray_ecg_retrieval.ipynb` notebook** for an example of multimodal retrieval.
+
+2. **Run the X-ray retrieval script**:
+   ```bash
+   python xray_retrieval.py
+   ```
+
+## t-SNE Plot
+
+1. **Check the `tnse_plot.ipynb` notebook** for an example of a t-SNE plot of features.
+
