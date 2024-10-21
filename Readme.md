@@ -1,6 +1,6 @@
 MoRE: MultiModal Contrastive Pretraining of Xray, ECG, and Report
 
-![MoRE Framework](./images/diagramMultimodal_final.png)
+![MoRE Framework](./diagramMultimodal_final.png)
 
 Setting up environment:
 1.Create a virtual ENV
