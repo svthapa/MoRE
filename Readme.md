@@ -3,6 +3,8 @@
 
 ![MoRE Framework](./diagramMultimodal_final.png)
 
+MoRE is a pretraining framework which synergestically aligns Xray, ECG, and Diagnostic Report of same patient with Contrastive Learning. The Clinical Report (Cardiology Report and Radiology Report) are combined together and acts an anchor to align the Xray and ECG in a multimodal space, we show this via Multi-Modal Retrieval by retrieving Xray and ECG data via a single text query (refer to Section 4.6.3 MultiModal Retrieval in Paper), we also adapt TransLRP to show multimodal attention visualization to provide explanation of multimodal input for diagnosis (refer to section 4.6.3 Gradient Based LRP attention visualization). MoRE beats baseline GLoRIA, MedKLIP in Mimic IV Xray dataset on 4 labels (Atelectasis, Cardiomegaly, Edema, Effusion) and beats baselines in PtbXL ECG dataset for superclass labels. MoRE outperforms its baselines in Zero-shot classification as well showcasing its strong representation learning capability. MoRE also utilizes PEFT LoRA strategy to fine-tune the LLM during pre-training effectively only training 0.6% of original parameters of the LLM significantly reducing training time. 
+
 ## Setting up the Environment
 
 1. **Create a virtual environment**:
