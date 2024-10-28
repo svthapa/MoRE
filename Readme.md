@@ -1,3 +1,10 @@
+## Please Cite this work as:
+@article{thapa2024more,
+  title={MoRE: Multi-Modal Contrastive Pre-training with Transformers on X-Rays, ECGs, and Diagnostic Report},
+  author={Thapa, Samrajya and Howlader, Koushik and Bhattacharjee, Subhankar and others},
+  journal={arXiv preprint arXiv:2410.16239},
+  year={2024}
+}
 
 # MoRE: MultiModal Contrastive Pretraining of X-ray, ECG, and Report
 
