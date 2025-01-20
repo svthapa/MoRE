@@ -69,3 +69,7 @@ MoRE is a pretraining framework which synergestically aligns Xray, ECG, and Diag
 
 1. **Check the `tnse_plot.ipynb` notebook** for an example of a t-SNE plot of features.
 
+## Model Weights
+
+Link: https://drive.google.com/file/d/1BB9dT6iYihqJarD5qX0bdnfYhiwhBgmH/view?usp=share_link 
+Change layer names, drop any weights if extra as needed through pytorch 
